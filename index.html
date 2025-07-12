@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foodie Hub</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Foodie Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="navbar-brand" href="#home">
+          <img src="images/logo.png" alt="Foodie Hub Logo" style="height: 40px;" />
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home / Hero Section -->
+  <section id="home" class="hero-slide d-flex align-items-center justify-content-center text-center"
+    style="background-image: url('images/backgroung1.jpg'); height: 100vh; background-size: cover; background-position: center;">
+    <div class="hero-content text-white">
+      <h1 class="display-4 fw-bold">Welcome to Foodie Hub</h1>
+      <p class="lead">Order your favorite meals instantly!</p>
+    </div>
+  </section>
+
+  <!-- Restaurants Section -->
+  <section id="restaurants" class="section-padding bg-dark text-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" style="color: #ff9800;">Our Restaurants</h2>
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="restaurant-card bg-secondary p-3 rounded shadow-sm text-center">
+            <img src="images/building.jpg" alt="Restaurant Entrance" class="img-fluid rounded" />
+            <h4 class="mt-3" style="color: #ff9800;">Restaurant Entrance</h4>
+            <p>“A warm and welcoming entrance that invites you inside.”.</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="restaurant-card bg-secondary p-3 rounded shadow-sm text-center">
+            <img src="images/warth.jpg" alt="Cozy Dining Space" class="img-fluid rounded" />
+            <h4 class="mt-3" style="color: #ff9800;">Cozy Dining Space</h4>
+            <p>A cozy and stylish interior designed for comfort and taste.”</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="restaurant-card bg-secondary p-3 rounded shadow-sm text-center">
+            <img src="images/service.jpg" alt="Friendly Service" class="img-fluid rounded" />
+            <h4 class="mt-3" style="color: #ff9800;">Friendly Service</h4>
+            <p>“Exceptional service that makes every meal feel special.”</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="restaurant-card bg-secondary p- rounded shadow-sm text-center">
+            <img src="images/food.jpg" alt="Delicious Dishes on Display" class="img-fluid rounded" />
+            <h4 class="mt-3" style="color: #ff9800;">Delicious Dishes on Display</h4>
+            <p>“Beautifully arranged dishes that celebrate flavor and culture.”</p>
+            <a href="#menu" class="btn btn-warning">View Menu</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section-padding bg-black text-white">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" style="color: #ff9800;">Menu</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-sm">
+            <img src="images/steak.jpg" class="card-img-top" alt="Grilled Ribeye Steak" />
+            <div class="card-body">
+              <h5 class="card-title">Grilled Ribeye Steak</h5>
+              <p class="card-text">Juicy ribeye grilled to perfection.</p>
+              <p class="card-text"><strong>Price:</strong> $25</p>
+              <span class="badge bg-success">Available</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-sm">
+            <img src="images/rt.jpg" class="card-img-top" alt="Tortellini" />
+            <div class="card-body">
+              <h5 class="card-title">Tortellini</h5>
+              <p class="card-text">Tortellini with cheese and cream sauce is one of the most delicious Italian dishes.</p>
+              <p class="card-text"><strong>Price:</strong> $18</p>
+              <span class="badge bg-danger">Unavailable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-sm">
+            <img src="images/hmbarger.jpg" class="card-img-top" alt="Cheese Burger" />
+            <div class="card-body">
+              <h5 class="card-title">Cheese Burger</h5>
+              <p class="card-text">Classic burger with melted cheese.</p>
+              <p class="card-text"><strong>Price:</strong> $12</p>
+              <span class="badge bg-success">Available</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-sm">
+            <img src="images/c.jpg" class="card-img-top" alt="Pizza Margherita" />
+            <div class="card-body">
+              <h5 class="card-title">Pizza Margherita</h5>
+              <p class="card-text">Pizza Margherita is perfect for those who enjoy fresh and simple flavors.</p>
+              <p class="card-text"><strong>Price:</strong> $12</p>
+              <span class="badge bg-success">Available</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-sm">
+            <img src="images/pasta.jpg" class="card-img-top" alt="Lasagna" />
+            <div class="card-body">
+              <h5 class="card-title">Lasagna</h5>
+              <p class="card-text">Lasagna is a classic Italian dish made with layers of pasta, meat sauce, and creamy cheese.</p>
+              <p class="card-text"><strong>Price:</strong> $12</p>
+              <span class="badge bg-success">Available</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 bg-dark text-white shadow-sm">
+            <img src="images/a.jpg" class="card-img-top" alt="Fried Chicken" />
+            <div class="card-body">
+              <h5 class="card-title">Fried Chicken</h5>
+              <p class="card-text">Kids love crispy fried chicken with fries and ketchup.</p>
+              <p class="card-text"><strong>Price:</strong> $12</p>
+              <span class="badge bg-success">Available</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+<section id="order" class="section-padding bg-secondary text-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" style="color: #ffeb3b;">Place Your Order</h2>
+    <form action="#" method="post">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <label for="customerName" class="form-label">Customer Name</label>
+          <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required />
+        </div>
+        <div class="col-md-6">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="+93..." required />
+        </div>
+        <div class="col-md-6">
+          <label for="restaurant" class="form-label">Select Restaurant</label>
+          <select class="form-select" id="restaurant" required>
+            <option selected disabled>Choose...</option>
+            <option>Restaurant Entrance</option>
+            <option>Cozy Dining Space</option>
+            <option>Friendly Service</option>
+            <option>Delicious Dishes</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Select Menu Items</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="item1" />
+            <label class="form-check-label" for="item1">Grilled Ribeye Steak</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="item2" />
+            <label class="form-check-label" for="item2">Tortellini</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="item3" />
+            <label class="form-check-label" for="item3">Cheese Burger</label>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning px-4">Submit Order</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section section-padding bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/me.jpg" alt="About Foodie Hub" class="img-fluid rounded about-image" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="about-title">About Foodie Hub</h3>
+          <p class="about-text">At Foodie Hub, we believe food is more than just a meal – it's an experience. Our
+            platform connects hungry customers with the best local restaurants, making food delivery simple, fast, and
+            reliable.</p>
+          <p class="about-text">Whether you're craving international flavors, or modern fusion meals, we deliver your
+            favorites right to your doorstep. Our mission is to bring comfort, flavor, and convenience to every dining
+            experience.</p>
+          <p class="about-text">We also support local chefs and restaurant owners by giving them a platform to reach
+            more customers and grow their businesses. With just a few clicks, amazing food is on its way to you!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer Section -->
+  <footer id="contact" class="footer-section text-white">
+    <div class="container text-center py-4">
+      <h4 class="text-warning mb-3">Get in Touch</h4>
+      <p>📧 contact@foodiehub.com</p>
+      <p>📞 +93 123 456 789</p>
+      <p>📍 Herat, Afghanistan</p>
+
+      <div class="social-icons my-3">
+        <a href="#" class="text-warning fs-4 mx-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-warning fs-4 mx-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-warning fs-4 mx-2"><i class="bi bi-twitter"></i></a>
+      </div>
+
+      <p class="mb-0">&copy; 2025 Foodie Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (برای منوی همبرگری و سایر کامپوننت‌ها) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

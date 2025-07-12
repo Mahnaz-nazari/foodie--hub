@@ -1,0 +1,352 @@
+/* style.css */
+
+/* فونت و رنگ‌بندی کلی */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #f05e09;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Navbar */
+.navbar-dark.bg-dark {
+    background-color: #000 !important;
+    border-bottom: 2px solid #ff9800;
+}
+
+.navbar-brand {
+    color: #ff9800 !important;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    color: #ffc107 !important;
+    font-weight: 600;
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff9800 !important;
+}
+
+/* Hero Section */
+.hero-slide {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #ff9800;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: slideInDown 1.5s ease forwards;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #ffc107;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    animation: slideInUp 1.5s ease forwards;
+}
+
+/* بخش padding عمومی */
+.section-padding {
+    padding: 60px 0;
+}
+
+/* عنوان بخش‌ها */
+.section-title {
+    color: #ff9800;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+}
+
+/* کارت رستوران‌ها */
+.restaurant-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #6c757d;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 10px 3px #ff9800,
+        0 0 20px 5px #ffb300,
+        0 0 30px 8px #ffc107;
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 180px;
+    /* همه عکس‌ها یک اندازه میشن */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.restaurant-card h4 {
+    color: #ff9800;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.restaurant-card p {
+    color: #fff;
+    flex-grow: 1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* بخش منو - کارت غذا */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 10px 3px #ff9800,
+        0 0 20px 5px #ffb300,
+        0 0 30px 8px #ffc107;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* بخش درباره ما */
+.about-section {
+    padding: 60px 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.about-image {
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.7);
+    border-radius: 15px;
+    max-width: 80%;
+    /* عکس کوچکتر */
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* وسط چین کردن عکس */
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+}
+
+.about-title {
+    color: #ffb300;
+    /* زرد روشن‌تر و جذاب‌تر */
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffb300;
+    /* رنگ متن زرد */
+}
+
+
+/* بخش تماس و فوتر */
+.footer-section {
+    background-color: #000;
+    border-top: 2px solid #ff9800;
+    padding: 30px 0;
+    color: #ffc107;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.footer-section a {
+    color: #ff9800;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    transform: scale(1.2);
+}
+
+.footer-section i {
+    margin: 0 10px;
+}
+
+/* انیمیشن متن هرو */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ریسپانسیو */
+
+@media (max-width: 991.98px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .restaurant-card img,
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+.footer-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-section h4 {
+    color: #ffb300;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer-section .social-icons a {
+    transition: transform 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffc107;
+}
+
+
+
+/* 🎯 Order Form Section */
+#order {
+    padding: 60px 0;
+    background-color: #000;
+    /* Dark background */
+}
+
+#order .form-label {
+    color: #ffeb3b;
+    /* Yellow labels */
+    font-weight: 500;
+}
+
+#order .form-control,
+#order .form-select {
+    background-color: #1a1f22;
+    /* Dark input background */
+    color: #fff;
+    border: 1px solid #ffeb3b;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+#order .form-control:focus,
+#order .form-select:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 5px #ffc107;
+    background-color: #1c1c1c;
+}
+
+#order .form-check-label {
+    color: #fff;
+}
+
+#order .btn-warning {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+#order .btn-warning:hover {
+    background-color: #ff9800;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
